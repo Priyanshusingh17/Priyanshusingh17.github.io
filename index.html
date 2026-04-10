@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Priyanshu Singh Portfolio | AI Developer & C++ Engineer</title>
+
+<meta name="description" content="Priyanshu Singh Portfolio - AI Developer, C++ Developer, DSA Expert, Projects, GitHub, LinkedIn">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth;}
+
+body{
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+
+/* PARTICLES */
+#particles-js{
+    position:fixed;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+
+/* NAVBAR */
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    padding:15px 40px;
+    background:rgba(0,0,0,0.5);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+header h2{color:#00f7ff;}
+
+nav a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:60px;
+}
+
+.hero img{
+    width:250px;
+    border-radius:50%;
+    border:4px solid #00f7ff;
+    box-shadow:0 0 40px #00f7ff;
+    transition:0.5s;
+}
+
+.hero img:hover{
+    transform:scale(1.1) rotateY(20deg);
+    box-shadow:0 0 80px #00f7ff;
+}
+
+.hero-text h1{
+    font-size:50px;
+    background:linear-gradient(90deg,#00f7ff,#ff00c8);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.typing{
+    color:#00f7ff;
+    font-size:22px;
+    margin-top:10px;
+}
+
+/* BUTTON */
+.btn{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:25px;
+    background:linear-gradient(45deg,#00f7ff,#ff00c8);
+    color:white;
+    text-decoration:none;
+    margin-right:10px;
+    display:inline-block;
+}
+
+/* SECTIONS */
+section{
+    padding:80px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+h2{
+    border-bottom:2px solid #00f7ff;
+    display:inline-block;
+    margin-bottom:20px;
+}
+
+/* CARDS */
+.card{
+    background:rgba(255,255,255,0.1);
+    padding:20px;
+    margin-top:20px;
+    border-radius:15px;
+    transition:0.5s;
+    transform-style:preserve-3d;
+}
+
+.card:hover{
+    transform:rotateY(15deg) rotateX(10deg) scale(1.05);
+    box-shadow:0 20px 40px rgba(0,0,0,0.5);
+}
+
+/* GRID */
+.grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<header>
+<h2>Priyanshu Singh</h2>
+<nav>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<img src="yourphoto.jpg" alt="Priyanshu Singh">
+
+<div class="hero-text">
+<h1>Priyanshu Singh</h1>
+<p class="typing" id="typing"></p>
+
+<a class="btn" href="resume.pdf" target="_blank">Resume</a>
+<a class="btn" href="https://github.com/Priyanshusingh17" target="_blank">GitHub</a>
+<a class="btn" href="https://www.linkedin.com/in/priyanshu-singh-7969492a3" target="_blank">LinkedIn</a>
+</div>
+
+</section>
+
+<section id="about">
+<h2>About Me</h2>
+
+<p>
+I am Priyanshu Singh, an aspiring AI developer and C++ programmer with strong expertise in data structures and algorithms. I have solved numerous problems on competitive platforms and developed projects like flood prediction using Transformer-based deep learning. During my internship at DMRC, I built efficient systems such as a lost and found platform. I am passionate about problem-solving, scalable system design, and continuously learning new technologies.
+</p>
+
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>AI Flood Prediction</h3>
+<p>Deep learning model using Transformer architecture.</p>
+<a href="resume.pdf" target="_blank">View PDF</a>
+</div>
+
+<div class="card">
+<h3>Lost & Found System</h3>
+<p>Developed during DMRC internship.</p>
+</div>
+
+<div class="card">
+<h3>DSA Practice</h3>
+<p>Strong problem solving with LeetCode.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+
+<p>Email: <a href="mailto:js2969870@gmail.com">js2969870@gmail.com</a></p>
+
+<p>GitHub: <a href="https://github.com/Priyanshusingh17">github.com/Priyanshusingh17</a></p>
+
+<p>LinkedIn: <a href="https://www.linkedin.com/in/priyanshu-singh-7969492a3">LinkedIn Profile</a></p>
+
+</section>
+
+<footer>
+<p>© 2026 Priyanshu Singh Portfolio</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+<script>
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 80 },
+    size: { value: 3 },
+    move: { speed: 2 },
+    line_linked: { enable: true }
+  }
+});
+
+const text=["AI Developer","C++ Developer","DSA Expert"];
+let i=0,j=0,current="",del=false;
+
+function type(){
+current=text[i];
+document.getElementById("typing").textContent=current.substring(0,j);
+
+if(!del && j<current.length) j++;
+else if(del && j>0) j--;
+else{del=!del;if(!del)i=(i+1)%text.length;}
+
+setTimeout(type,del?50:100);
+}
+type();
+</script>
+
+</body>
+</html>
